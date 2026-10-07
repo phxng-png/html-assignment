@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Thông tin cá nhân</title>
+</head>
+<body>
+    <h1>Thông tin cá nhân</h1>
+    <p><strong>Họ tên:</strong> Dương Gia Phong</p>
+    <p><strong>Ngày sinh:</strong> 01/01/2003</p>
+    <p><strong>Lớp:</strong> ICT4 </p>
+    <img src="https://i.pinimg.com/1200x/37/df/9f/37df9f1ad9118d7beaeb53ae5ad131f7.jpg" alt="ảnh đại diện của phong" width="150">
+
+    <h3>Sở thích:</h3>
+    <ul>
+        <li>Chơi game</li>
+        <li>Nghe nhạc</li>
+        <li>Edit</li>
+        <li>Thể dục</li>
+    </ul>
+
+    <p>
+        <strong>Liên kết cá nhân:</strong> 
+        <a href="https://github.com/phxng-png" target="_blank"></a>
+    </p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Bảng điểm sinh viên</title>
+</head>
+<body>
+    <h2>Bảng Điểm Sinh Viên</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Môn học</th>
+                <th>Điểm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pháp luật đại cương</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tiếng anh cơ bản 1</td>
+                <td>8.3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Quản trị học</td>
+                <td>7.7</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Chạy 1</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Triết học Mác - Lênin</td>
+                <td>7.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Điểm trung bình</th>
+                <th>7.3</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Form đăng ký sinh viên</title>
+</head>
+<body>
+
+    <h2>Form đăng ký sinh viên</h2>
+
+    <form action="" method="POST">
+        <div>
+            <label for="fullname">Họ tên:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu...">
+        </div>
+        <br>
+        <div>
+            <label>Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="Nam" checked>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+            <input type="radio" id="other" name="gender" value="Khác">
+            <label for="other">Khác</label>
+        </div>
+        <br>
+        <div>
+            <label>Sở thích:</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="Đọc sách">
+            <label for="reading">Đọc sách</label>
+            <input type="checkbox" id="coding" name="hobby" value="Lập trình">
+            <label for="coding">Chơi Game</label>
+            <input type="checkbox" id="sports" name="hobby" value="Thể thao">
+            <label for="sports">Thể thao</label>
+        </div>
+        <br>
+        <div>
+            <label for="major">Ngành học:</label><br>
+            <select id="major" name="major">
+                <option value="CNTT">CNTT</option>
+                <option value="Kĩ Thuật">Kĩ Thuật</option>
+                <option value="Y Học">Y Học</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="note">Ghi chú:</label><br>
+            <textarea id="note" name="note" rows="4" cols="40" placeholder="Nhập thêm thông tin ghi chú..."></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Đăng ký">
+        </div>
+    </form>
+
+</body>
+</html>
